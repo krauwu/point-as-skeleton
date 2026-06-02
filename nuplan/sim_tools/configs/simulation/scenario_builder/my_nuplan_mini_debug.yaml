@@ -1,0 +1,20 @@
+_target_: nuplan.planning.scenario_builder.nuplan_db.nuplan_scenario_builder.NuPlanScenarioBuilder
+_convert_: 'all'
+
+data_root: ${oc.env:NUPLAN_DATA_ROOT}/nuplan-v1.1/splits/mini
+map_root: ${oc.env:NUPLAN_MAPS_ROOT}
+sensor_root: ${oc.env:NUPLAN_DATA_ROOT}/nuplan-v1.1/sensor_blobs
+
+db_files:   # if db file(s) exist locally, the data_root is ignored
+- ./data/nuplan/nuplan-v1.1/splits/mini/2021.05.12.22.28.35_veh-35_00620_01164.db
+
+map_version: nuplan-maps-v1.0
+
+include_cameras: false # Include camera data in the scenarios.
+
+max_workers: null
+verbose: ${verbose}
+
+defaults:
+  - vehicle_parameters: nuplan_vehicle_parameters
+  - scenario_mapping: nuplan_scenario_mapping

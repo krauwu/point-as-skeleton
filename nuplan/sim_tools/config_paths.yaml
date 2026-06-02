@@ -1,0 +1,20 @@
+nuplan_data_store: local
+nuplan_data_root: ./data/nuplan
+nuplan_maps_root: ./data/nuplan/maps
+nuplan_db_files: ./data/nuplan/nuplan-v1.1/splits/mini/2021.05.12.22.28.35_veh-35_00620_01164.db
+nuplan_db_root: ./data/nuplan/nuplan-v1.1/splits/mini
+nuplan_map_version: nuplan-maps-v1.0
+nuplan_exp_root: ./outputs/sim_log
+blob_path: ./data/nuplan/nuplan-v1.1/sensor_blobs
+ray_temp_dir: ./outputs/ray_temp
+sim_cfg_path: ./sim_tools/configs/simulation
+dwm_path: ../src
+gen_cfg: ./sim_tools/configs/nuplan_site.json
+gen_img_log: ./outputs/generated_images
+clr_scene_root: ./assets/pointcloud
+clr_scene_file: ./assets/pointcloud/bg2021.05.12.22.28.35_veh-35_00620_01164_vox0.01.npy
+actor_root: ./assets/pointcloud/actors/track_actor
+actor_template_root: ./assets/pointcloud/actors
+vad:
+  config_file: ''
+  checkpoint: ''
