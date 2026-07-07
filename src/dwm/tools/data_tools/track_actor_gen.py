@@ -51,9 +51,7 @@ nuplandb_wrapper = NuPlanDBWrapper(
 gt_list = ['car','ped','bike']
 Cameralist = ['CAM_F0','CAM_L0','CAM_L1','CAM_L2','CAM_B0','CAM_R2','CAM_R1']
 
-log_db_names = ["2021.05.12.22.00.38_veh-35_01008_01518",'2021.05.12.22.28.35_veh-35_00620_01164','2021.05.12.23.36.44_veh-35_00152_00504',
-               '2021.05.12.23.36.44_veh-35_01133_01535','2021.05.12.23.36.44_veh-35_02035_02387','2021.05.25.14.16.10_veh-35_01690_02183',
-               '2021.06.03.12.02.06_veh-35_00233_00609']
+log_db_names = ['2021.05.12.22.28.35_veh-35_00620_01164']
 
 
 instance_root = './data/nuplan/actors/target_instances_m.pkl'
